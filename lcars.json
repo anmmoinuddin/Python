@@ -1,0 +1,275 @@
+{
+	"main":[
+		{
+			"id": "main_bg",
+			"posx": 0,
+			"posy": 0,
+			"width": 800,
+			"height": 480,
+			"img":"bg.png"
+		},
+		{
+			"id": "main_btn_home",
+			"posx": 11,
+			"posy": 116,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "main"
+		},
+		{
+			"id": "main_btn_log",
+			"posx": 11,
+			"posy": 161,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "log"
+		},
+		{
+			"id": "main_btn_media",
+			"posx": 11,
+			"posy": 208,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "media"
+		},
+		{
+			"id": "main_btn_conf",
+			"posx": 11,
+			"posy": 342,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "conf"
+			
+		},
+		{
+			"id": "main_text_ip",
+			"posx": 117,
+			"posy": 87,
+			"width": 673,
+			"height": 353,
+			"color": "#fff",
+		},
+		{
+			"id": "main_btn_engage",
+			"posx": 613,
+			"posy": 54,
+			"width": 178,
+			"height": 45,
+			"beep": "sfcbep01_05.wav",
+			"exec": "getip.py",
+			"answer": "main_text_ip"
+		}
+	],
+	"log":[
+		{
+			"id": "log_bg",
+			"posx": 0,
+			"posy": 0,
+			"width": 800,
+			"height": 480,
+			"img":"bg.png"
+		},
+		{
+			"id": "log_btn_home",
+			"posx": 11,
+			"posy": 116,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "main"
+		},
+		{
+			"id": "log_btn_log",
+			"posx": 11,
+			"posy": 161,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "log"
+		},
+		{
+			"id": "log_btn_media",
+			"posx": 11,
+			"posy": 208,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "media"
+		},
+		{
+			"id": "log_btn_conf",
+			"posx": 11,
+			"posy": 342,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "conf"
+		},
+		{
+			"id": "log_text_log",
+			"posx": 117,
+			"posy": 87,
+			"width": 673,
+			"height": 353,
+			"color": "#fff",
+		},
+		{
+			"id": "log_btn_engage",
+			"posx": 613,
+			"posy": 54,
+			"width": 178,
+			"height": 45,
+			"beep": "sfcbep01_05.wav",
+			"exec": "getlog.py",
+			"answer": "log_text_log"
+		}
+	],
+	"media":[
+		{
+			"id": "media_bg",
+			"posx": 0,
+			"posy": 0,
+			"width": 800,
+			"height": 480,
+			"img":"bg.png"
+		},
+		{
+			"id": "media_btn_home",
+			"posx": 11,
+			"posy": 116,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "main"
+		},
+		{
+			"id": "media_btn_log",
+			"posx": 11,
+			"posy": 161,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "log"
+		},
+		{
+			"id": "media_btn_media",
+			"posx": 11,
+			"posy": 208,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "media"
+		},
+		{
+			"id": "media_btn_conf",
+			"posx": 11,
+			"posy": 342,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "conf"
+		},
+		{
+			"id": "media_list_1",
+			"posx": 150,
+			"posy": 100,
+			"width": 145,
+			"height": 50,
+			"exec": "play_list.py 1",
+			"bgcolor": "#ff3",
+			"color": "#000",
+			"text": "Play List 1",
+		},
+		{
+			"id": "media_list_2",
+			"posx": 300,
+			"posy": 100,
+			"width": 145,
+			"height": 50,
+			"exec": "play_list.py 2",
+			"bgcolor": "#ffc",
+			"color": "#000",
+			"text": "Play List 2",
+		},
+		{
+			"id": "media_list_3",
+			"posx": 450,
+			"posy": 100,
+			"width": 145,
+			"height": 50,
+			"exec": "play_list.py 3",
+			"bgcolor": "#9cf",
+			"color": "#000",
+			"text": "Play List 3",
+		},
+		{
+			"id": "media_list_stop",
+			"posx": 600,
+			"posy": 100,
+			"width": 145,
+			"height": 50,
+			"exec": "stop.py",
+			"bgcolor": "#9cf",
+			"color": "#000",
+			"text": "Stop",
+		}
+	],
+	"conf":[
+		{
+			"id": "conf_bg",
+			"posx": 0,
+			"posy": 0,
+			"width": 800,
+			"height": 480,
+			"img":"bg.png"
+		},
+		{
+			"id": "conf_btn_home",
+			"posx": 11,
+			"posy": 116,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "main"
+		},
+		{
+			"id": "conf_btn_log",
+			"posx": 11,
+			"posy": 161,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "log"
+		},
+		{
+			"id": "conf_btn_media",
+			"posx": 11,
+			"posy": 208,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "media"
+		},
+		{
+			"id": "conf_btn_conf",
+			"posx": 11,
+			"posy": 342,
+			"width": 95,
+			"height": 42,
+			"beep": "204.wav",
+			"goto": "conf"
+		},
+		{
+			"id": "conf_text",
+			"posx": 117,
+			"posy": 87,
+			"width": 673,
+			"height": 353,
+			"color": "#fff",
+			"img": "soon.png"
+		}
+	],
