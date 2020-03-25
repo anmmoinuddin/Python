@@ -83,11 +83,5 @@ print(c>=b)
 
 
 
-#In operator in python
-
-myString ="Hello, world"
-print("H" in myString)
-print("lo, w" in myString)
-print("oll" in myString)
 
 
