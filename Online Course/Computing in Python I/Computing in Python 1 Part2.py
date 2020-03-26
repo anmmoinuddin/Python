@@ -17,7 +17,7 @@ myNum=myNum-3
 print(myNum)
 myNum=myNum*3
 print(myNum)
-myNum=myNum//3
+myNum=myNum//3# floor division
 print(myNum)
 myNum=myNum**3#exponential 
 print(myNum)
@@ -45,6 +45,34 @@ for character in "Hello, world":
     letterCount+=1
 print(letterCount)
 
+# Checking if a triangle exists
+side1=int(input("Enter the shortest side: "))
+
+side2=int(input("Enter the next shortest side: "))
+
+side3=int(input("Enter the shortest side: "))
+
+result=(side1+side2)>side3
+print("These sides can form a triangle" , result)
+
+#create the string
+myString= "Hello, World"
+myString+="!"
+print(myString)
+
+
+myAString="A"
+myBString="B"
+myCString="C"
+    # Sorting the string alphabetically
+print(myAString<myBString)
+print(myCString<myAString)
+print(myAString==myAString)
+print(myAString<myaString)
+  #string multiplication
+myAString="A"
+myInt=5
+print(myAString*myInt)
 
 
 
