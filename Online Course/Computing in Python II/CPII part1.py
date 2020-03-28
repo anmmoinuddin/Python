@@ -96,12 +96,6 @@ customername="Moin"
 vendor="Masoud"
 overdraftprotection=True
 
-if balance>=purchaseprice*salesTax and cardholdername==\
-       customername and vendor in trustedvendors:   #same statement 
-    print("Purchase approved")
-else:
-    print("Declined")
-print("Done")
 if (balance>=purchaseprice*salesTax or overdraftprotection) and cardholdersname==\
        customername and vendor in trustedvendors:   #same statement 
     print("Purchase approved")
@@ -129,3 +123,26 @@ elif guacamole:
 else:
     price+=1
 print(price)
+
+#Nested conditional statement---------------------------------------
+    #bank overdraft
+balance=20
+salesTax==1.08
+cardholdersname="Moin"
+trustedvendors=["Maria","bob", "Masoud", "John"]
+purchaseprice=19
+customername="Moin"
+vendor="Masoud"
+overdraftprotection=True
+
+if (balance>=purchaseprice*salesTax or overdraftprotection):
+    if cardholdersname==customername:
+       if vendor in trustedvendors:   #same statement 
+            print("Purchase approved")
+       else:
+            print("Purchase not approved")
+    else:
+         print("invalid customer")
+else:
+    print("no funds or overdraft protected")
+print("Done")
