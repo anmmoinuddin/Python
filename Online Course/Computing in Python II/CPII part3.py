@@ -43,6 +43,6 @@ def currencyamount(currency, amount):
        return str(amount)
 print(currencyamount("GBP", 5))
 #------------------------------------------------------------------------
-print("A", "B", "C", sep="", end="")
-print("D", "E", "F", sept="", end="")
+print("A", "B", "C", sep="#", end="")  #seperate
+print("D", "E", "F", sep=" ", end="")
     
